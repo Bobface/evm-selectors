@@ -43,3 +43,6 @@ let all = db.items();
 
 ## Requirements
 If the `download` feature is active (it is by default), a SSL/TLS library must be present. See the [reqwest documentation](https://github.com/seanmonstar/reqwest?tab=readme-ov-file#requirements) for further details.
+
+## Acknowledgements
+[OpenChain](https://openchain.xyz) for providing a reliable selector database.
