@@ -49,9 +49,7 @@ impl EvmSelectors {
         let raw = Self::download(timeout).await?;
         if let Some(parent) = path.parent() {
             fs::create_dir_all(parent)?;
-        } else {
-            return Err(anyhow::anyhow!("Path has no parent {}", path.display()));
-        };
+        }
         fs::write(path, raw)?;
         Ok(())
     }
